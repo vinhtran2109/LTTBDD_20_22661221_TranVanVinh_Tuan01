@@ -2,19 +2,22 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Cat = exports.Dog = exports.Animal = void 0;
 class Animal {
-    constructor(name) {
-        this.name = name;
+    makeSound() {
+        console.log("Some animal sound");
+    }
+    sound() {
+        this.makeSound();
     }
 }
 exports.Animal = Animal;
 class Dog extends Animal {
-    bark() {
+    makeSound() {
         console.log("Woof!");
     }
 }
 exports.Dog = Dog;
 class Cat extends Animal {
-    meow() {
+    makeSound() {
         console.log("Meow!");
     }
 }

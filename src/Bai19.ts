@@ -1,18 +1,17 @@
 export class Animal {
-    name: string;
-    constructor(name: string) {
-        this.name = name;
+    makeSound(): void {
+        console.log("Some animal sound");
     }
 }
 
 export class Dog extends Animal {
-    bark(): void {
+    makeSound(): void {
         console.log("Woof!");
     }
 }
 
 export class Cat extends Animal {
-    meow(): void {
+    makeSound(): void {
         console.log("Meow!");
     }
 }
