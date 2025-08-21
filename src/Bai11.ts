@@ -1,6 +1,7 @@
 // import { Animal } from "./Bai9";
 
 // class Dog extends Animal {
+    
 //     bark(): void {
 //         console.log("Woof!");
 //     }
@@ -11,3 +12,4 @@
 //         console.log("Meow!");
 //     }
 // }
+aaaaaaaaaaaaaaaaaaaaaa
