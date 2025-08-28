@@ -1,17 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createDelayedPromise = void 0;
-const createDelayedPromise = () => {
+exports.createNumberAfter1s = void 0;
+const createNumberAfter1s = () => {
     return new Promise((resolve, reject) => {
         const success = true;
         if (success) {
             setTimeout(() => {
-                resolve("Hello Async");
-            }, 2000);
+                resolve(10);
+            }, 1000);
         }
         else {
             reject("Failed ");
         }
     });
 };
-exports.createDelayedPromise = createDelayedPromise;
+exports.createNumberAfter1s = createNumberAfter1s;

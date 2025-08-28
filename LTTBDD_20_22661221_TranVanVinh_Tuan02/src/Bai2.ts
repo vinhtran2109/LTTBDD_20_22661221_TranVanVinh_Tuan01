@@ -1,11 +1,10 @@
-
-export const createDelayedPromise = (): Promise<string> => {
+export const createNumberAfter1s = (): Promise<number> => {
   return new Promise((resolve, reject) => {
     const success = true;
     if (success) {
           setTimeout(() => {
-      resolve("Hello Async");
-    }, 2000); 
+     resolve(10)
+    }, 1000); 
     } else {
       reject("Failed ");
     }
